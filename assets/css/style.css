@@ -52,6 +52,7 @@ h3.block-title::after {
     position: relative;
     width: 50px;
     top: 12px;
+    margin: 0 0 25px 0;
 }
 
 h3.block-title: {
@@ -59,7 +60,6 @@ h3.block-title: {
     font-weight: 500;
     margin: 0;
     line-height: normal;
-    padding: 0 0 25px 0;
 }
 
 h3 {
@@ -96,7 +96,6 @@ ul.upcoming-events {
     list-style-type: none;
     padding: 0px;
     margin: 0px;
-    padding-top: 15px;
 }
 
 ul.upcoming-events li {
@@ -104,7 +103,7 @@ ul.upcoming-events li {
 }
 
 .content.twitter {
-    padding-top: 17px;
+    padding-top: 5px;
 }
 
 section#latest {
@@ -118,6 +117,8 @@ section#intro {
 }
 
 /* NAVBAR STYLE */
+
+
 
 .navbar-inverse .navbar-nav > li > a {
     color: #FFF;
@@ -141,14 +142,18 @@ section#intro {
     min-height: 90px !important;
 }
 
-@media (max-width: 992px) {
- 
-    .navbar-nav > li {
-        padding-top: 0px !important;
-    }
+
+
+@media (min-width: 992px) {
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
 }
 
 @media (max-width: 992px) {
+    .navbar-nav > li {
+        padding-top: 0px !important;
+    }
     .navbar-header {
         float: none;
     }
@@ -164,11 +169,7 @@ section#intro {
     .navbar-collapse {
         border-top: 0px solid #8AC54F !important;
         border-color: #8AC54F;
-    }
-
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
+        padding-top: 15px;
     }
 
     .navbar-collapse.collapse {
@@ -197,6 +198,41 @@ section#intro {
         padding-top: 20px;
     }
 }
+
+/* SECOND LEVEL NAV */
+
+ul.auto-menu {
+	list-style-type: none;
+	padding: 0;
+	padding-top: 0px;
+	width: 100%;
+	margin: 0;
+}
+
+ul.auto-menu li.first {
+	padding: 12px 0;
+}
+
+ul.auto-menu li.last {
+	border-bottom: 1px solid #f2f2f2;
+}
+ul.auto-menu li {
+	padding: 12px 0;
+	border-top: 1px solid #f2f2f2;
+}
+
+/* BREADCRUMBS */
+
+.breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: "/ ";
+    padding: 0 5px;
+}
+.breadcrumb {
+	border: 0px solid #dddddd;
+	border-radius: 0px;
+}
+
 
 
 /* ADDED PADDING IN NAVBAR */
@@ -252,7 +288,7 @@ section#intro {
 }
 
 #newsCarousel {
-    padding-top: 15px;
+
 }
 
 #newsCarousel .list-group {
