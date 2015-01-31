@@ -3,6 +3,7 @@
  ============================================================ */
 body {
     font-family: 'Open Sans', sans-serif;
+    color: #292f33;
 }
 
 .pad-top {
@@ -65,6 +66,10 @@ h3 {
     font-weight: 500;
 }
 
+h2 {
+    font-size: 26px;
+}
+
 /* HOMEPAGE */
 
 .by-the-numbers {
@@ -102,8 +107,15 @@ ul.upcoming-events li {
     padding-top: 17px;
 }
 
+section#latest {
+	background-color:#E8E8E8; 
+	padding-bottom: 45px; 
+	margin-top: 20px;
+}
 
-
+section#intro { 
+	padding-bottom: 10px; 
+}
 
 /* NAVBAR STYLE */
 
@@ -293,8 +305,10 @@ ul.upcoming-events li {
 
 /* FOOTER STYLE*/
 
-#footer {
+section#footer {
 	background-color: #fff;
+	background-color:#8AC54F; 
+	margin-top: 40px;
 }
 
 #footer h4 {
