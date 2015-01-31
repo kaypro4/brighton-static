@@ -1,2 +1,2 @@
 # brighton-static
-Static brighton theme template
+Static template based on Bootstrap 3
