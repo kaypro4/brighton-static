@@ -43,6 +43,10 @@ p {
     margin-bottom: 10px;
     font-size: 95%;
 }
+.right .cta-list {
+	padding-top: 60px;
+}
+
 
 h3.block-title::after {
     background-color: #999;
@@ -205,6 +209,14 @@ section#intro {
     .cta-list, .footer {
         padding-top: 20px;
     }
+    
+    .right .cta-list {
+		padding-top: 30px;
+	}
+    
+    #footer h4 {
+		padding-top: 20px;
+	}
 }
 
 /* SECOND LEVEL NAV */
