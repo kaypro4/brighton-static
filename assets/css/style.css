@@ -193,6 +193,10 @@ section#intro {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider{
+    	background-color: #ffffff;
+    }
 
     .collapse.in {
         display: block !important;
