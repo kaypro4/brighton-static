@@ -311,8 +311,9 @@ ul.auto-menu li {
 /*  NEWS CAROUSEL */
 
 
+
 #newsCarousel .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-    border: 0px solid black;
+    border: 1px solid #dddddd;
     color: black;
 }
 
@@ -330,6 +331,10 @@ ul.auto-menu li {
     padding: 10px 10px 25px 10px;
     background: rgba(0,0,0,0.5);
     text-shadow: none;
+}
+
+#newsCarousel .carousel-caption h3 {
+    font-size:20px;
 }
 
 #newsCarousel .carousel-caption p {
@@ -354,12 +359,22 @@ ul.auto-menu li {
 #newsCarousel .list-group-item {
     border-radius: 0px;
     cursor: pointer;
+    border-right: 0px !important;
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+#newsCarousel .list-group-item.first {
+    border-top: 0px !important;
+}
+
+#newsCarousel .list-group-item.last {
+    border-bottom: 0px !important;
 }
 
 #newsCarousel .list-group .active {
     background-color: #E8E8E8;
     color: #292f33;
-    font-weight: 700;
 }
 
 #newsCarousel h4 {
@@ -367,7 +382,12 @@ ul.auto-menu li {
     font-weight: 400;
 }
 
+#newsCarousel .list-group .active h4 {
+    font-weight: 700;
+}
+
 #newsCarousel a:active {
+
 }
 
 @media (min-width: 992px) {
