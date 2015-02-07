@@ -60,7 +60,7 @@
         
         	var clickEvent = false;
 			$('#newsCarousel').carousel({
-				interval:   20000
+				interval:   15000
 			}).on('click', '.list-group li', function() {
 					clickEvent = true;
 					$('.list-group li').removeClass('active');
@@ -85,7 +85,7 @@
    	  var itemlength = $('#newsCarousel .item').length;
       var triggerheight = Math.round(boxheight/itemlength+1);
 	  $('#newsCarousel .list-group-item').outerHeight(triggerheight);
-	  $("#newsCarousel").carousel('pause');
+	  //$("#newsCarousel").carousel('pause');
 	});
 	
 	$( window ).resize(function() {
@@ -93,7 +93,7 @@
    	  var itemlength = $('#newsCarousel .item').length;
       var triggerheight = Math.round(boxheight/itemlength+1);
 	  $('#newsCarousel .list-group-item').outerHeight(triggerheight);
-	  $("#newsCarousel").carousel('pause');
+	  //$("#newsCarousel").carousel('pause');
 	});
 	
 

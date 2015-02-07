@@ -121,13 +121,19 @@ section#intro {
 	padding-bottom: 10px; 
 }
 
+section#intro .intro-title{
+    margin-top: 30px;
+}
+
 /* NAVBAR STYLE */
 
-
+.navbar .dropdown-menu > li > a {
+	font-weight: 700;
+}
 
 .navbar-inverse .navbar-nav > li > a {
     color: #FFF;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 110%;
 }
 
@@ -159,6 +165,7 @@ section#intro {
 	}
 }
 
+/* NAVBAR MOBILE */
 @media (max-width: 992px) {
     .navbar-nav > li {
         padding-top: 0px !important;
@@ -179,6 +186,10 @@ section#intro {
         border-top: 0px solid #8AC54F !important;
         border-color: #8AC54F;
         padding-top: 15px;
+    }
+
+    .navbar-inverse .navbar-toggle:hover .icon-bar {
+        background-color: #006687;
     }
 
     .navbar-collapse.collapse {
@@ -282,10 +293,33 @@ ul.auto-menu li {
 }
 
 
+
+#carousel-photos .carousel-caption {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#carousel-photos .glyphicon {
+    font-size: 100%;
+}
+
+
 /*  NEWS CAROUSEL */
 
+
 #newsCarousel .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-    border: 0px solid #ffffff;
+    border: 0px solid black;
+    color: black;
+}
+
+
+#newsCarousel .carousel-inner > .item {
+    border: 1px solid #dddddd !important;
+    border-right: 0px !important;
 }
 
 #newsCarousel .carousel-caption {
@@ -293,8 +327,8 @@ ul.auto-menu li {
     right: 0;
     bottom: 0;
     text-align: left;
-    padding: 10px;
-    background: rgba(0,0,0,0.6);
+    padding: 10px 10px 15px 10px;
+    background: rgba(0,0,0,0.5);
     text-shadow: none;
 }
 
@@ -323,22 +357,23 @@ ul.auto-menu li {
 }
 
 #newsCarousel .list-group .active {
-    background-color: #5bc0de;
+    background-color: #E8E8E8;
+    color: #292f33;
+    font-weight: 700;
 }
 
 #newsCarousel h4 {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 }
 
 #newsCarousel a:active {
-    border: 0px solid #ffffff;
 }
 
 @media (min-width: 992px) {
  
     #newsCarousel {
-        padding-right: 33.3333%;
+        padding-right: 25%;
     }
     
     #newsCarousel .carousel-controls {
@@ -370,6 +405,7 @@ section#footer {
 	text-transform: uppercase;
 	color: #fff;
 }
+
 
 
 
