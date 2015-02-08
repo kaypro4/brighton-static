@@ -372,10 +372,59 @@ ul.auto-menu li {
     border-bottom: 0px !important;
 }
 
-#newsCarousel .list-group .active {
-    background-color: #E8E8E8;
-    color: #292f33;
+#newsCarousel .carousel-label {
+
+    display: none;
+    position: absolute;
+    top: 20px;
+    padding: 8px 10px 8px 10px;
+    margin-left: -10px;
+    z-index: 500;
+    background: #8ac54f;
+    color: white;
+    font-weight: 500;
+    font-size:24px;
+
 }
+
+/* 
+Left arrow stuff
+Used this to create it: http://cssarrowplease.com/;
+*/
+
+#newsCarousel .list-group .active {
+    position: relative;
+    background: #D8D8D8;
+    border: 1px solid #D8D8D8;
+    color: #292f33;
+    box-shadow: 0px 0px 0px #888888;
+}
+#newsCarousel .list-group .active:after, #newsCarousel .list-group .active:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+
+}
+
+#newsCarousel .list-group .active:after {
+    border-color: rgba(216, 216, 216, 0);
+    border-right-color: #D8D8D8;
+    border-width: 25px;
+    margin-top: -25px;
+}
+#newsCarousel .list-group .active:before {
+    border-color: rgba(216, 216, 216, 0);
+    border-right-color: #D8D8D8;
+    border-width: 26px;
+    margin-top: -26px;
+}
+
+
 
 #newsCarousel h4 {
     font-size: 14px;
