@@ -6,6 +6,36 @@ body {
     color: #292f33;
 }
 
+
+@keyframes fadein {
+    from { opacity: .3; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: .3; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: .3; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: .3; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: .3; }
+    to   { opacity: 1; }
+}
+
 .pad-top {
     padding-top: 60px;
 }
@@ -309,7 +339,14 @@ ul.auto-menu li {
 
 
 /*  NEWS CAROUSEL */
-
+#newsCarousel{
+    
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
 
 #newsCarousel .carousel-inner > .item {
     border: 1px solid #dddddd !important;
@@ -393,6 +430,12 @@ Another concept:  http://designwall.s3.amazonaws.com/images/guide/dw_focus/home_
     color: #292f33;
     box-shadow: 0px 0px 0px #888888;
     border-left: 5px solid #008cba;
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
 }
 
 #newsCarousel .list-group .active:after, #newsCarousel .list-group .active:before {
