@@ -181,6 +181,8 @@ section#intro .intro-title{
 
 .navbar {
     min-height: 90px !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.18);
+    border-bottom: 1px solid #ddd;
 }
 
 
@@ -340,7 +342,7 @@ ul.auto-menu li {
 
 /*  NEWS CAROUSEL */
 #newsCarousel{
-    
+
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 1s; /* Firefox < 16 */
         -ms-animation: fadein 1s; /* Internet Explorer */
