@@ -311,13 +311,6 @@ ul.auto-menu li {
 /*  NEWS CAROUSEL */
 
 
-
-#newsCarousel .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
-    border: 1px solid #dddddd;
-    color: black;
-}
-
-
 #newsCarousel .carousel-inner > .item {
     border: 1px solid #dddddd !important;
     border-right: 0px !important;
@@ -346,10 +339,6 @@ ul.auto-menu li {
     font-size: 100%;
 }
 
-#newsCarousel {
-
-}
-
 #newsCarousel .list-group {
     position: absolute;
     top: 0px;
@@ -357,23 +346,27 @@ ul.auto-menu li {
 }
 
 #newsCarousel .list-group-item {
-    border-radius: 0px;
     cursor: pointer;
     border-right: 0px !important;
-    padding-top: 30px;
     padding-left: 25px;
+    display:table;
+}
+
+#newsCarousel .list-group-item .vert-mid {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
 }
 
 #newsCarousel .list-group-item.first {
-    border-top: 0px !important;
+   /* border-top: 0px !important;*/
 }
 
 #newsCarousel .list-group-item.last {
-    border-bottom: 0px !important;
+    /*border-bottom: 0px !important;*/
 }
 
 #newsCarousel .carousel-label {
-
     display: none;
     position: absolute;
     top: 20px;
@@ -384,21 +377,24 @@ ul.auto-menu li {
     color: white;
     font-weight: 500;
     font-size:24px;
-
 }
 
 /* 
 Left arrow stuff
 Used this to create it: http://cssarrowplease.com/;
+Another concept:  http://designwall.s3.amazonaws.com/images/guide/dw_focus/home_content/slider_in_home_content_frontend.png;
 */
+
 
 #newsCarousel .list-group .active {
     position: relative;
-    background: #D8D8D8;
-    border: 1px solid #D8D8D8;
+    background: #E8E8E8;
+    border: 0px solid #E8E8E8;
     color: #292f33;
     box-shadow: 0px 0px 0px #888888;
+    border-left: 5px solid #008cba;
 }
+
 #newsCarousel .list-group .active:after, #newsCarousel .list-group .active:before {
     right: 100%;
     top: 50%;
@@ -413,13 +409,13 @@ Used this to create it: http://cssarrowplease.com/;
 
 #newsCarousel .list-group .active:after {
     border-color: rgba(216, 216, 216, 0);
-    border-right-color: #D8D8D8;
+    border-right-color: #008cba;
     border-width: 25px;
     margin-top: -25px;
 }
 #newsCarousel .list-group .active:before {
     border-color: rgba(216, 216, 216, 0);
-    border-right-color: #D8D8D8;
+    border-right-color: #008cba;
     border-width: 26px;
     margin-top: -26px;
 }
@@ -435,9 +431,7 @@ Used this to create it: http://cssarrowplease.com/;
     font-weight: 700;
 }
 
-#newsCarousel a:active {
 
-}
 
 @media (min-width: 992px) {
  

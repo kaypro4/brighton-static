@@ -83,7 +83,7 @@
     $(window).load(function() {
    	  var boxheight = $('#newsCarousel .carousel-inner').innerHeight();
    	  var itemlength = $('#newsCarousel .item').length;
-      var triggerheight = Math.round(boxheight/itemlength);
+      var triggerheight = Math.round(boxheight/itemlength+0.5);
 	  $('#newsCarousel .list-group-item').outerHeight(triggerheight);
 	  //$("#newsCarousel").carousel('pause');
 	});
@@ -91,7 +91,7 @@
 	$( window ).resize(function() {
 	var boxheight = $('#newsCarousel .carousel-inner').innerHeight();
    	  var itemlength = $('#newsCarousel .item').length;
-      var triggerheight = Math.round(boxheight/itemlength);
+      var triggerheight = Math.round(boxheight/itemlength+0.5);
 	  $('#newsCarousel .list-group-item').outerHeight(triggerheight);
 	  //$("#newsCarousel").carousel('pause');
 	});
