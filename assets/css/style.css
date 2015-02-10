@@ -1,3 +1,5 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+
 /* =============================================================
    GENERAL STYLES
  ============================================================ */
@@ -105,18 +107,29 @@ h2 {
     font-size: 26px;
 }
 
+.right h3 {
+    font-size: 18px;
+}
+
 /* HOMEPAGE */
 
 .by-the-numbers {
     padding-left: 25px;
     padding-right: 25px;
-    margin-top: 15px;
     padding-bottom: 20px;
+    padding-top: 85px;
+    margin-top:-15px;
+    height:200px;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
-    border: 17px solid #fff;
-    background: #8ac54f;
+    border: 1px solid #fff;
+    background-image: url("../img/apple2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align:center;
+    color:#fff;
 }
 
 .by-the-numbers p, .upcoming-events p {
@@ -125,6 +138,11 @@ h2 {
 
 #home {
     margin-top: 0px;
+}
+
+.slide-cta {
+    font-weight:bold;
+    font-size:110%;
 }
 
 ul.upcoming-events {
@@ -144,7 +162,7 @@ ul.upcoming-events li {
 section#latest {
 	background-color:#E8E8E8; 
 	padding-bottom: 45px; 
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 section#intro { 
@@ -157,7 +175,7 @@ section#intro .intro-title{
 
 /* NAVBAR STYLE */
 
-.navbar .dropdown-menu > li > a {
+.navbar .dropdown-menu > li > a,.navbar .dropdown-menu > li > a:focus {
 	font-weight: 700;
 }
 
@@ -261,6 +279,10 @@ section#intro .intro-title{
     #footer h4 {
 		padding-top: 20px;
 	}
+
+    .by-the-numbers {
+        margin-top:35px !important;
+    }
 }
 
 /* SECOND LEVEL NAV */
@@ -341,6 +363,38 @@ ul.auto-menu li {
 
 
 /*  NEWS CAROUSEL */
+
+
+/*  Uncomment for fade instead of slide
+
+#newsCarousel .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+#newsCarousel .active {
+  opacity: 1;
+}
+
+#newsCarousel .active.left,
+#newsCarousel .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+#newsCarousel .next.left,
+#newsCarousel .prev.right {
+  opacity: 1;
+}
+
+
+#newsCarousel .carousel-control {
+ z-index: 2;
+}*/
+
+
+
 #newsCarousel{
 
     -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
@@ -361,7 +415,7 @@ ul.auto-menu li {
     bottom: 0;
     text-align: left;
     padding: 10px 10px 25px 10px;
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.7);
     text-shadow: none;
 }
 
