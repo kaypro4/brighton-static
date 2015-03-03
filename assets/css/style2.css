@@ -1,0 +1,632 @@
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
+
+/* =============================================================
+   GENERAL STYLES
+ ============================================================ */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #292f33;
+}
+
+
+@keyframes fadein {
+    from { opacity: .3; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: .3; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: .3; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: .3; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: .3; }
+    to   { opacity: 1; }
+}
+
+.thumbnail {
+    position: relative;
+    padding: 0px;
+    margin-bottom: 10px;
+
+        -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+
+    min-height: 350px;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.banner-img { /* http://cssdeck.com/labs/different-css3-box-shadows-effects */
+     -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+
+opacity: 0.9;
+    filter: alpha(opacity=90); /* For IE8 and earlier */
+}
+
+.pad-top {
+    padding-top: 60px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+i.fa {
+    padding: 5px;
+}
+
+section {
+    padding-top: 20px;
+}
+
+p {
+    font-weight: 300;
+    line-height: 150%;
+}
+
+.pad-row {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.pad-bottom {
+    padding-bottom: 50px;
+}
+
+.cta-button {
+    padding-left: 7px;
+    padding-right: 7px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 95%;
+    font-weight: 700;
+}
+.cta-list {
+    width:200px;
+    position:absolute;
+    top:20px;
+    right:40px;
+}
+
+
+h3.block-title::after {
+    background-color: #999;
+    content: "";
+    display: block;
+    height: 1px;
+    position: relative;
+    width: 50px;
+    top: 12px;
+    margin: 0 0 25px 0;
+}
+
+h3.block-title: {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    line-height: normal;
+}
+
+h3 {
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+.right h3 {
+    font-size: 18px;
+}
+
+/* HOMEPAGE */
+
+.by-the-numbers {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-top: 85px;
+    margin-top:15px;
+    margin-left: -5px;
+    height:200px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #fff;
+    background-image: url("../img/apple2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align:center;
+    color:#fff;
+}
+
+.by-the-numbers p, .upcoming-events p {
+    line-height: 130%;
+}
+
+#home {
+    margin-top: 0px;
+}
+
+.slide-cta {
+    font-weight:bold;
+    font-size:110%;
+}
+
+ul.upcoming-events {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+ul.upcoming-events li {
+    padding-bottom: 7px;
+}
+
+.content.twitter {
+    padding-top: 5px;
+}
+
+section#latest {
+	background-color:#E8E8E8; 
+	padding-bottom: 45px; 
+	margin-top: 30px;
+
+    
+}
+
+
+section#intro { 
+	padding-bottom: 10px; 
+}
+
+section#intro .intro-title{
+    margin-top: 30px;
+}
+
+/* NAVBAR STYLE */
+
+.navbar .dropdown-menu > li > a,.navbar .dropdown-menu > li > a:focus {
+	font-weight: 700;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #FFF;
+    font-weight: 700;
+    font-size: 110%;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #FFF;
+}
+
+.navbar-inverse {
+    background-color: #8AC54F;
+}
+
+.navbar-nav > li {
+    padding-top: 18px !important;
+}
+
+.navbar {
+    min-height: 90px !important;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.18);
+    border-bottom: 1px solid #ddd;
+}
+
+
+
+@media (min-width: 992px) {
+	.dropdown:hover .dropdown-menu {
+		display: block;
+	}
+	
+	.dropdown:hover > a {
+	  background-color: #006687;
+	}
+}
+
+/* NAVBAR MOBILE */
+@media (max-width: 992px) {
+    .navbar-nav > li {
+        padding-top: 0px !important;
+    }
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 0px solid #8AC54F !important;
+        border-color: #8AC54F;
+        padding-top: 15px;
+    }
+
+    .navbar-inverse .navbar-toggle:hover .icon-bar {
+        background-color: #006687;
+    }
+
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+
+    .navbar-nav>li {
+        float: none;
+    }
+
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .navbar-inverse .navbar-nav .open .dropdown-menu .divider{
+    	background-color: #ffffff;
+    }
+
+    .collapse.in {
+        display: block !important;
+    }
+
+    .cta-list, .footer {
+        padding-top: 20px;
+    }
+    
+    .right .cta-list {
+		padding-top: 30px;
+	}
+    
+    #footer h4 {
+		padding-top: 20px;
+	}
+
+    .by-the-numbers {
+        margin-top:35px !important;
+    }
+}
+
+/* SECOND LEVEL NAV */
+
+ul.auto-menu {
+	list-style-type: none;
+	padding: 0;
+	padding-top: 18px;
+	width: 100%;
+	margin: 0;
+}
+
+ul.auto-menu li.first {
+	padding: 12px 0;
+	border-top: none;
+}
+
+ul.auto-menu li {
+	padding: 12px 0;
+	border-top: 1px solid #f2f2f2;
+}
+
+/* BREADCRUMBS */
+
+.breadcrumb > li + li:before {
+    color: #CCCCCC;
+    content: "/ ";
+    padding: 0 5px;
+}
+.breadcrumb {
+	border: 0px solid #dddddd;
+	border-radius: 0px;
+	display: none;
+}
+
+
+
+/* ADDED PADDING IN NAVBAR */
+
+.navbar {
+    padding: 15px;
+    -webkit-transition: background .8s ease-out,padding .8s ease-out;
+    -moz-transition: background .8s ease-out,padding .8s ease-out;
+    transition: background .8s ease-out,padding .8s ease-out;
+}
+
+
+/* CLASS FOR REMOVING PADDING IN NAVBAR*/
+
+.navbar-pad-original {
+    padding: 0px;
+}
+
+
+
+/* CARUOSEL STYLE OR SLIDESHOW STYLE*/
+
+.back-light {
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 10px;
+    font-weight: 500;
+}
+
+
+
+#carousel-photos .carousel-caption {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#carousel-photos .glyphicon {
+    font-size: 100%;
+}
+
+
+/*  NEWS CAROUSEL */
+
+
+/*  Uncomment for fade instead of slide
+
+#newsCarousel .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+#newsCarousel .active {
+  opacity: 1;
+}
+
+#newsCarousel .active.left,
+#newsCarousel .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+#newsCarousel .next.left,
+#newsCarousel .prev.right {
+  opacity: 1;
+}
+
+
+#newsCarousel .carousel-control {
+ z-index: 2;
+}*/
+
+
+
+#newsCarousel{
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+#newsCarousel .carousel-inner > .item {
+    border: 1px solid #dddddd !important;
+    border-right: 0px !important;
+}
+
+#newsCarousel .carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 10px 10px 25px 10px;
+    background: rgba(0,0,0,0.7);
+    text-shadow: none;
+}
+
+#newsCarousel .carousel-caption h3 {
+    font-size:20px;
+}
+
+#newsCarousel .carousel-caption p {
+    line-height: 100%;
+}
+
+#newsCarousel .carousel-caption .label {
+    margin-top: 20px;
+    font-size: 100%;
+}
+
+#newsCarousel .list-group {
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+
+#newsCarousel .list-group-item {
+    cursor: pointer;
+    border-right: 0px !important;
+    padding-left: 25px;
+    display:table;
+}
+
+#newsCarousel .list-group-item .vert-mid {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+#newsCarousel .list-group-item.first {
+   /* border-top: 0px !important;*/
+}
+
+#newsCarousel .list-group-item.last {
+    /*border-bottom: 0px !important;*/
+}
+
+#newsCarousel .carousel-label {
+    display: none;
+    position: absolute;
+    top: 20px;
+    padding: 8px 10px 8px 10px;
+    margin-left: -10px;
+    z-index: 500;
+    background: #8ac54f;
+    color: white;
+    font-weight: 500;
+    font-size:24px;
+}
+
+/* 
+Left arrow stuff
+Used this to create it: http://cssarrowplease.com/;
+Another concept:  http://designwall.s3.amazonaws.com/images/guide/dw_focus/home_content/slider_in_home_content_frontend.png;
+*/
+
+
+#newsCarousel .list-group .active {
+    position: relative;
+    background: #E8E8E8;
+    border: 0px solid #E8E8E8;
+    color: #292f33;
+    box-shadow: 0px 0px 0px #888888;
+    border-left: 5px solid #008cba;
+
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
+            animation: fadein 1s;
+}
+
+#newsCarousel .list-group .active:after, #newsCarousel .list-group .active:before {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+
+}
+
+#newsCarousel .list-group .active:after {
+    border-color: rgba(216, 216, 216, 0);
+    border-right-color: #008cba;
+    border-width: 25px;
+    margin-top: -25px;
+}
+#newsCarousel .list-group .active:before {
+    border-color: rgba(216, 216, 216, 0);
+    border-right-color: #008cba;
+    border-width: 26px;
+    margin-top: -26px;
+}
+
+
+
+#newsCarousel h4 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#newsCarousel .list-group .active h4 {
+    font-weight: 700;
+}
+
+
+
+@media (min-width: 992px) {
+ 
+    #newsCarousel {
+        padding-right: 25%;
+    }
+    
+    #newsCarousel .carousel-controls {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+	.carousel-caption p, #newsCarousel .list-group {
+		display: none;
+	}
+	#newsCarousel {
+        padding-top: 0px;
+        margin-top: 25px;
+    }
+} 
+
+
+
+/* FOOTER STYLE*/
+
+section#footer {
+	background-color: #fff;
+	background-color:#8AC54F; 
+	margin-top: 40px;
+}
+
+#footer h4 {
+	text-transform: uppercase;
+	color: #fff;
+}
+
+
+.thumbnail-tag {
+    position:absolute; 
+    bottom: 8px; 
+    right:-5px; 
+    padding: 2px; 
+    color:white; 
+    padding-right: 15px; 
+    padding-left: 15px;
+    font-size: 90%;
+}
+
+.thumbnail-tag.learn {
+    background-color: #F04124; 
+}
+
+.thumbnail-tag.event {
+    background-color: #008CBA; 
+}
+
+.thumbnail-tag.blog {
+    background-color: #738A8D; 
+}
+
+
+.thumbnail-wrapper{
+    position:relative;
+}
